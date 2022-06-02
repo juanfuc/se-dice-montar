@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    background-color: #7b726b;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.fondo {
+    transform: translateZ(-10px) scale(2);
+
+}
+.medio {
+    transform: translateZ(-5px) scale(1.5);
+
+}
+.frente {
+    transform: translate3d(-5px) scale(1.5);
+
+}
+    
+.marco,
+.fondo, 
+.medio,
+.frente {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h1 {
+margin-top: 0;
+font-size: 4rem;
+opacity: 0.5;
+}
+
+section {
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+}
